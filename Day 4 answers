@@ -1,0 +1,45 @@
+1]Print odd numbers in an array:
+var arr=[2,5,7,4,9,11];
+for(var i=0;i<arr.length;i++)
+{
+if(arr%2!==0)
+{
+console.log(arr[i])
+}
+}
+
+Arrow Function:
+var array=[2,4,6,5,9,7];
+var arr2=array.filter((ele)=>ele%2!==0);
+console.log(arr2)
+------------------------------------------------------------------------
+2]Convert all the strings to title caps in a string array.
+var arr=["java","python","javascript","c#"];
+for(var i=0;i<arr.length;i++)
+{
+   arr[i]=(arr[i].charAt(0).toUpperCase())+arr[i].slice(1).toLowerCase();
+}
+console.log(arr);
+
+Arrow Function:
+var arr=["jAVA","python","javascript","c#"];
+var arr2=arr.map((ele)=>ele.charAt(0).toUpperCase()+ele.slice(1).toLowerCase());
+console.log(arr2);
+-------------------------------------------------------------------------------
+3]Sum of all numbers in an array
+var arr=[2,4,5,2,4,6];
+var sum=0
+for(var i=0;i<arr.length;i++)
+{
+sum= sum+arr[i];
+}
+console.log(sum);
+
+Arrow Function:
+var arr=[2,4,5,6,8];
+var res=arr.reduce((ace,value)=>ace+value,0);
+console.log(res);
+-----------------------------------------------------------------------------
+4]Return all the prime numbers in an array
+var arr=[5,7,11,22,13];
+
